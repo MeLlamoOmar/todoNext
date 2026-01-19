@@ -9,9 +9,18 @@
 * Conectar repo a Vercel [x]
 * Configurar .gitignore [x]
 
+## 🗃️ FASE 1 — Base de datos (Turso + SQLite)
+* Crear DB app-prod en Turso [x]
+* Configurar .env.local [x]
+* Configurar envs en Vercel (Preview / Prod) [x]
+* Configurar ORM (Prisma o Drizzle) [x]
+* Configurar DB local [x]
+* **Definir schema**: [x]
+    - Task [x]
+* Ejecutar migraciones en dev [x]
 
-## 🔐 FASE 1 — Autenticación (Better Auth)
-* Crear /lib/auth [ ]
+## 🔐 FASE 2 — Autenticación (Better Auth)
+* Crear /lib/auth [x]
 * Definir modelos User y Session [ ]
 * Implementar auth.service.ts [ ]
 * Manejo de cookies / sesión [ ]
@@ -24,21 +33,6 @@
 * Proteger rutas privadas [ ]
 * Login / logout funcionando [ ]
 
-
-## 🗃️ FASE 2 — Base de datos (Turso + SQLite)
-* Crear DB app-dev en Turso [ ]
-* Crear DB app-prod en Turso [ ]
-* Configurar .env.local [ ]
-* Configurar envs en Vercel (Preview / Prod) [ ]
-* Configurar ORM (Prisma o Drizzle) [ ]
-* Definir schema: [ ]
-* User [ ]
-* Session [ ]
-* Task [ ]
-* Ejecutar migraciones en dev [ ]
-* Ignorar DB local en Git [ ]
-
-
 ## 🧠 FASE 3 — Arquitectura backend
 * Crear /repositories [ ]
 * task.repository.ts [ ]
@@ -49,7 +43,6 @@
 * API no contiene reglas de negocio [ ]
 * Services concentran la lógica [ ]
 
-
 ## ⚡ FASE 4 — Server Actions
 * Crear /actions/task.actions.ts [ ]
 * Acciones: [ ]
@@ -59,13 +52,11 @@
 * Validar sesión en cada action [ ]
 * Revalidar UI tras acciones [ ]
 
-
 ## 📄 FASE 5 — Server Components
 * Crear /tasks/page.tsx [ ]
 * Cargar tareas en Server Component [ ]
 * Pasar datos por props [ ]
 * Renderizar estados correctamente [ ]
-
 
 ## 🎨 FASE 6 — UI mínima
 * Formulario crear tarea [ ]
@@ -73,7 +64,6 @@
 * Botón completar [ ]
 * Botón eliminar [ ]
 * Feedback básico (loading / error) [ ]
-
 
 ## 🧪 FASE 7 — Testing
 
@@ -107,13 +97,11 @@
 * ❌ Server Components [ ]
 * ❌ Internals de Next.js [ ]
 
-
 ## 🔒 FASE 8 — Seguridad
 * Validar sesión en Server Actions [ ]
 * Validar sesión en API Routes [ ]
 * Verificar ownership de tareas [ ]
 * Nunca confiar en IDs del cliente [ ]
-
 
 ## 🚀 FASE 9 — Deploy
 * Push a dev [ ]
@@ -123,7 +111,6 @@
 * Deploy a producción [ ]
 * Probar prod con DB prod [ ]
 
-
 ## 🧹 FASE 10 — Cierre
 * Crear .env.example [ ]
 * Revisar estructura [ ]
@@ -131,4 +118,3 @@
 * Verificar nombres [ ]
 * Confirmar entendimiento del flujo [ ]
 * README con instrucciones básicas [ ]
-

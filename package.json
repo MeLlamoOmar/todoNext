@@ -3,24 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"pnpm run dev:db\" \"next dev\"",
+    "dev:db": "turso dev --db-file local.db",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@next/env": "^16.1.2",
+    "better-auth": "^1.4.13",
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
+    "lucide-react": "^0.562.0",
     "next": "16.1.2",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.8",
     "eslint": "^9",
     "eslint-config-next": "16.1.2",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
