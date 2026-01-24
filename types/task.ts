@@ -4,4 +4,5 @@ export type Task = {
   isCompleted: boolean
   createdAt: number
   updatedAt: number
+  userId: string
 }
