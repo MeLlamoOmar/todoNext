@@ -10,4 +10,5 @@ export default defineConfig({
     url: validEnv.tursoUrl,
     authToken: validEnv.nodeEnv === 'development' ? undefined : validEnv.tursoAuth
   },
+  casing: 'snake_case'
 });

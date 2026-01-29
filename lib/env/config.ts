@@ -8,7 +8,9 @@ const serverValidator = z.object({
   betterUrl: z.url(),
   tursoUrl: z.url(),
   tursoAuth: z.string(),
-  nodeEnv: z.string()
+  nodeEnv: z.string(),
+  githubClient: z.string(),
+  githubSecret: z.string()
 })
 
 const invalidEnv = {
@@ -16,7 +18,9 @@ const invalidEnv = {
   betterUrl: process.env.BETTER_AUTH_URL,
   tursoUrl: process.env.TURSO_DATABASE_URL,
   tursoAuth: process.env.TURSO_AUTH_TOKEN,
-  nodeEnv: process.env.NODE_ENV
+  nodeEnv: process.env.NODE_ENV,
+  githubClient: process.env.GITHUB_CLIENT_ID,
+  githubSecret: process.env.GITHUB_CLIENT_SECRET,
 };
 
 const parsedInvalidEnv = serverValidator.safeParse(invalidEnv)
