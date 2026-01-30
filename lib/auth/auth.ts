@@ -1,7 +1,7 @@
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import db from '@/lib/db';
-import { validEnv } from '../env/config';
+import validEnv from '../env/config';
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
@@ -9,8 +9,8 @@ export const auth = betterAuth({
   }),
   socialProviders: {
     github: {
-      clientId: validEnv.githubClient,
-      clientSecret: validEnv.githubSecret,
+      clientId: validEnv.GITHUB_CLIENT_ID,
+      clientSecret: validEnv.GITHUB_CLIENT_SECRET,
     },
   },
 });
