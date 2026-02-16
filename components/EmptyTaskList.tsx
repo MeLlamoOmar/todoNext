@@ -1,9 +1,15 @@
 import { BookCheck } from 'lucide-react';
-import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from './ui/empty';
+import {
+  Empty,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+  EmptyDescription,
+} from './ui/empty';
 
 const EmptyTaskList = () => {
   return (
-    <Empty>
+    <Empty className="justify-start">
       <EmptyHeader>
         <EmptyMedia variant="icon">
           <BookCheck />
@@ -15,6 +21,6 @@ const EmptyTaskList = () => {
       </EmptyHeader>
     </Empty>
   );
-}
+};
 
-export default EmptyTaskList
+export default EmptyTaskList;
